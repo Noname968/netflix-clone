@@ -1,0 +1,29 @@
+*{
+    scroll-behavior: smooth;
+}
+.row{
+    color: white;
+    margin-left: 20px;
+}
+.rowimgs{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.rowimgs::-webkit-scrollbar{
+    display: none;
+}
+.rowimg{
+    max-height: 100px;
+    object-fit: contain;
+    margin-right: 15px;
+    transition: transform 450ms;
+}
+.rowimg:hover{
+    transform: scale(1.09);
+    opacity: 1;
+}
+.rowimglarge{
+    max-height: 250px;
+}
